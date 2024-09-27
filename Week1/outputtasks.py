@@ -9,4 +9,12 @@ print("\\ Displays a back slash")
 print("\" Displays a double quote")
 print("\' Displays a single quote")
 
+#Demonstration of everything thus far
 print("\t\"I am programming!\"")
+
+# Display a robot
+print("\\        /")
+print("##########")
+print("# O    O #")
+print("#  ____  #")
+print("##########")
