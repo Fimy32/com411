@@ -16,6 +16,16 @@ print("#  ____  #")
 print("##########")
 
 #BMI Calculator
-weight = float(input("What is your weight?"))
-height = float(input("What is your height?"))
-print("Your BMI is ", (weight/(height*height)*100000))
+name = str(input("What is your name?"))
+age = int(input("What is your age?"))
+weight = float(input("What is your weight(KG)?"))
+height = float(input("What is your height(M)?"))
+print("Hello",name,"your age is", age,"and your BMI is", (weight/(height ** 2)))
+
+#Operator Demonstration
+lives = int(input("Please enter the number of lives."))
+energy = int(input("Please enter the energy level."))
+shield = int(input("Please enter the shield level."))
+print("Lives:", "♥" * lives)
+print("Energy:", "♦" * energy)
+print("Shield:", "♦" * shield)
