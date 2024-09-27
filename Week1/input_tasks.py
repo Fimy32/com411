@@ -14,3 +14,8 @@ print("##########")
 print(f"# {eye}    {eye} #")
 print("#  ____  #")
 print("##########")
+
+#BMI Calculator
+weight = float(input("What is your weight?"))
+height = float(input("What is your height?"))
+print("Your BMI is ", (weight/(height*height)*100000))
