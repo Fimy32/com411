@@ -14,3 +14,13 @@ if activity_Type == "calculate":
 else:
     print("Performing",activity_Type + "...")
 print("Finished reading book")
+
+#Robot moving Demo
+
+direction = input("Towards which direction should I go (up, down, left or right)?")
+if (direction == "up"):
+    print("I am moving in an upward direction!")
+elif (direction == "down"):
+    print("I am moving in a downward direction!")
+else:
+    print("I am moving",direction + "!")
