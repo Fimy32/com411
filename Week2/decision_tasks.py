@@ -32,3 +32,15 @@ if (number % 2 != 0):
     print("Odd")
 else:
     print("Even")
+
+#Comparison Operators
+
+number = float(input("Please enter a number:"))
+number2 = float(input("Please enter another number:"))
+print("Number 1 is",number,"and Number 2 is",number2 +".")
+if (number < number2):
+    print("Number 1 is the smallest")
+elif (number > number2):
+    print("Number 2 is the smallest")
+else:
+    print("Number 1 and Number 2 are equal")
