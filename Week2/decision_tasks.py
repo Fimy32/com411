@@ -24,3 +24,11 @@ elif (direction == "down"):
     print("I am moving in a downward direction!")
 else:
     print("I am moving",direction + "!")
+
+#Modulous Operator
+
+number = int(input("Please enter a whole number:"))
+if (number % 2 != 0):
+    print("Odd")
+else:
+    print("Even")
