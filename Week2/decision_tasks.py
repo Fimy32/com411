@@ -37,10 +37,28 @@ else:
 
 number = float(input("Please enter a number:"))
 number2 = float(input("Please enter another number:"))
-print("Number 1 is",number,"and Number 2 is",number2 +".")
+print("Number 1 is",number,"and Number 2 is",number2)
 if (number < number2):
     print("Number 1 is the smallest")
 elif (number > number2):
     print("Number 2 is the smallest")
 else:
     print("Number 1 and Number 2 are equal")
+
+#Counter
+
+even_counter = 0
+odd_counter = 0
+number = float(input("Please enter a number:"))
+number2 = float(input("Please enter another number:"))
+number3 = float(input("Please enter a final number:"))
+num_List = [number,number2,number3]
+for num in num_List:
+    if (num % 2 == 0):
+        even_counter = even_counter + 1
+    else:
+        odd_counter = odd_counter + 1
+print("There are",even_counter,"even numbers and",odd_counter,"odd numbers")
+
+
+
