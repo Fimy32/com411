@@ -73,3 +73,4 @@ while counter2 < numbers_amount:
     numbers_temp = numbers_temp + int(input())
 
 print("The answer is",numbers_temp)
+
