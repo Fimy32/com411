@@ -19,14 +19,27 @@
 #     print(i,"steps remaining")
 #
 
-#Simple for loop
+# #Simple for loop
+#
+# brightness_level = int(input("Enter brightness level."))
+#
+# print("Adjusting brightness...")
+#
+# for i in range(0, brightness_level, 2):
+#     print("Brightness level:", "*" * i)
+#
+# print("Complete!")
 
-brightness_level = int(input("Enter brightness level."))
 
-print("Adjusting brightness...")
+#Demoed string indexing with For
 
-for i in range(0, brightness_level, 2):
-    print("Brightness level:", "*" * i)
+word = str(input("What word do you see?"))
 
-print("Complete!")
+print(word)
 
+print("Displaying index positions...")
+
+for index in range(len(word)):
+    print("index:",index,"=",word[index])
+
+print("Done!")
