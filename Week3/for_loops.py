@@ -11,12 +11,22 @@
 
 #For loop with a counter
 
-Number_Of_Steps = int(input("How far are we from the target?"))
-
-print(Number_Of_Steps)
-
-for i in range(Number_Of_Steps, 0, -1):
-    print(i,"steps remaining")
-
-
+# Number_Of_Steps = int(input("How far are we from the target?"))
 #
+# print(Number_Of_Steps)
+#
+# for i in range(Number_Of_Steps, 0, -1):
+#     print(i,"steps remaining")
+#
+
+#Simple for loop
+
+brightness_level = int(input("Enter brightness level."))
+
+print("Adjusting brightness...")
+
+for i in range(0, brightness_level, 2):
+    print("Brightness level:", "*" * i)
+
+print("Complete!")
+
