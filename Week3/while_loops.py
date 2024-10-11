@@ -10,7 +10,6 @@
 #     print("Remove Apple")
 #     removed_apples += 1
 
-
 # #While loop with a counter
 #
 # obstacle_num = int(input("How many obstacles should I avoid?"))
@@ -42,19 +41,35 @@
 # print("The battery is fully charged.")
 
 
-#While loop reading users input
+# #While loop reading users input
+#
+# phrase = str(input("Enter a phrase:"))
+#
+# print(phrase,"\n")
+#
+# phrase_number = len(phrase)
+#
+# counter = 0
+#
+# while counter < phrase_number:
+#
+#     counter += 1
+#
+#     print("Hi", end=" ")
 
-phrase = str(input("Enter a phrase:"))
 
-print(phrase,"\n")
+#While loop using calculations on user's input
 
-phrase_number = len(phrase)
+numbers_amount = int(input("How many numbers shall I sum up?"))
 
-counter = 0
+numbers_temp = 0
 
-while counter < phrase_number:
+counter2 = 0
 
-    counter += 1
+while counter2 < numbers_amount:
 
-    print("Hi", end=" ")
+    counter2 = counter2 + 1
+    print("Enter Number", counter2)
+    numbers_temp = numbers_temp + int(input())
 
+print("The answer is",numbers_temp)
