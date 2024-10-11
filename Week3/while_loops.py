@@ -10,14 +10,32 @@
 #     print("Remove Apple")
 #     removed_apples += 1
 
-#While loop with a counter
+# #While loop with a counter
+#
+# obstacle_num = int(input("How many obstacles should I avoid?"))
+#
+# current_obstacle = 0
+#
+# while current_obstacle < obstacle_num:
+#
+#     current_obstacle = current_obstacle + 1
+#
+#     print("Avoiding...Done!", current_obstacle,"avoided.")
+#
 
-obstacle_num = int(input("How many obstacles should I avoid?"))
+#While loop with ASCII art
 
-current_obstacle = 0
+bars_to_charge = int(input("How many bars do you want to charge?"))
 
-while current_obstacle < obstacle_num:
+print(bars_to_charge,"\n")
 
-    current_obstacle = current_obstacle + 1
+bars_charged = 0
 
-    print("Avoiding...Done!", current_obstacle,"avoided.")
+while bars_charged < bars_to_charge:
+
+    bars_charged += 1
+
+    print("Charging:", "[=]" * bars_charged)
+
+print("The battery is fully charged.")
+
