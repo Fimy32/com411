@@ -45,18 +45,19 @@
 # print("Done!")
 
 
-#Reversing a string with a loop
+# #Reversing a string with a loop
+#
+# reverse = str(input("Which phrase do you want to see in reverse?"))
+#
+# print(reverse)
+#
+# reversed_word = []
+#
+# for letter in range(0, len(reverse), 1):
+#     reversed_word.append(reverse[len(reverse) - 1 - letter])
+#
+# print("Reversing...")
+#
+# for letter in reversed_word:
+#     print(letter, end="")
 
-reverse = str(input("Which phrase do you want to see in reverse?"))
-
-print(reverse)
-
-reversed_word = []
-
-for letter in range(0, len(reverse), 1):
-    reversed_word.append(reverse[len(reverse) - 1 - letter])
-
-print("Reversing...")
-
-for letter in reversed_word:
-    print(letter, end="")
