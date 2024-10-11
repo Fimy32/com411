@@ -1,10 +1,22 @@
-#Simple for loop
+# #Simple for loop
+#
+# mountain_count = int(input("How many mountains should I display?"))
+#
+# print(mountain_count,"\n","Displaying...\n")
+#
+# for i in range(mountain_count):
+#
+#     print("mountain")
 
-mountain_count = int(input("How many mountains should I display?"))
 
-print(mountain_count,"\n","Displaying...\n")
+#For loop with a counter
 
-for i in range(mountain_count):
+Number_Of_Steps = int(input("How far are we from the target?"))
 
-    print("mountain")
+print(Number_Of_Steps)
 
+for i in range(Number_Of_Steps, 0, -1):
+    print(i,"steps remaining")
+
+
+#
