@@ -44,6 +44,19 @@
 #
 # print("Done!")
 
+# #Demoed string indexing with For
+#
+# word = str(input("What word do you see?"))
+#
+# print(word)
+#
+# print("Displaying index positions...")
+#
+# for index in range(len(word)):
+#     print(word[index])
+#
+# print("Done!")
+
 
 # #Reversing a string with a loop
 #
