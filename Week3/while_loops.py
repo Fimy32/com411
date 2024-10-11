@@ -9,3 +9,6 @@ removed_apples = 0
 while apples > removed_apples:
     print("Remove Apple")
     removed_apples += 1
+
+#While loop with a counter
+
