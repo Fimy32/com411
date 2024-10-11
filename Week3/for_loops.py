@@ -31,15 +31,32 @@
 # print("Complete!")
 
 
-#Demoed string indexing with For
+# #Demoed string indexing with For
+#
+# word = str(input("What word do you see?"))
+#
+# print(word)
+#
+# print("Displaying index positions...")
+#
+# for index in range(len(word)):
+#     print("index:",index,"=",word[index])
+#
+# print("Done!")
 
-word = str(input("What word do you see?"))
 
-print(word)
+#Reversing a string with a loop
 
-print("Displaying index positions...")
+reverse = str(input("Which phrase do you want to see in reverse?"))
 
-for index in range(len(word)):
-    print("index:",index,"=",word[index])
+print(reverse)
 
-print("Done!")
+reversed_word = []
+
+for letter in range(0, len(reverse), 1):
+    reversed_word.append(reverse[len(reverse) - 1 - letter])
+
+print("Reversing...")
+
+for letter in reversed_word:
+    print(letter, end="")
