@@ -40,6 +40,12 @@ def climb_ladder(steps_remaining, steps_completed):
     else:
         print("We are almost there!")
 
+def display_ladder(steps):
+    print("|---|\n" * steps)
+
+def create_ladder():
+    display_ladder(int(input("How many steps remain?")))
+
 listen()
 
 identify()
@@ -53,3 +59,7 @@ cross_bridge(6)
 
 climb_ladder(5,2)
 climb_ladder(2,5)
+
+create_ladder()
+
+
