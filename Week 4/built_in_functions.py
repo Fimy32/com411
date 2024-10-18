@@ -8,10 +8,14 @@ print("Program Ended!")
 
 
 #ASCII code to character
+valid = False
 ascii_Code = int(input("Program Started!\nPlease enter an ASCII code:"))
-if range(ascii_Code) == (32,126):
-    print("The character represented by the ASCII",ascii_Code,"is:",chr(ascii_Code))
-else:
+for i in range(32,126):
+    if ascii_Code == i:
+        print("The character represented by the ASCII",ascii_Code,"is:",chr(ascii_Code))
+        valid = True
+if valid != True:
     print("The code is not valid")
 print("Program Ended!")
 
+#=
