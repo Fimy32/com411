@@ -32,6 +32,14 @@ def cross_bridge(steps_crossed):
     else:
         print("We must keep going!")
 
+#Climb Ladder Function
+
+def climb_ladder(steps_remaining, steps_completed):
+    if steps_remaining > steps_completed:
+        print("Still some way to go!")
+    else:
+        print("We are almost there!")
+
 listen()
 
 identify()
@@ -42,3 +50,6 @@ escape_by("cross bridge ahead")
 
 cross_bridge(3)
 cross_bridge(6)
+
+climb_ladder(5,2)
+climb_ladder(2,5)
