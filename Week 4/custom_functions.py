@@ -24,6 +24,9 @@ def escape_by(plan):
     else:
         print("We cannot escape that way! The boulder is in the way!")
 
+def cross_bridge(steps_crossed):
+    if steps_crossed >= 5:
+
 listen()
 
 identify()
