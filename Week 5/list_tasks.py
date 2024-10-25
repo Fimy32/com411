@@ -34,9 +34,29 @@ def menu():
     temp_directions = directions()
     for i in range(len(temp_directions)):
         print(i,":",temp_directions[i])
+    print("")
 
 def run_task3():
     menu()
 
 if __name__ == "__main__":
     run_task3()
+
+
+#populating a list
+
+def menu_and_input():
+    menu()
+    user_direction = int(input(" "))
+    return directions()[user_direction]
+
+def run_task4():
+    print("Working out escape route...")
+    route = []
+    for i in range(1,5):
+        route.append(menu_and_input())
+    print("Escape route:",route)
+
+
+if __name__ == "__main__":
+    run_task4()
