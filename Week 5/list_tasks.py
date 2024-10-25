@@ -26,3 +26,17 @@ def run_task2():
 
 if __name__ == "__main__":
     run_task2()
+
+#Iterating a list
+
+def menu():
+    print("Please select a direction:")
+    temp_directions = directions()
+    for i in range(len(temp_directions)):
+        print(i,":",temp_directions[i])
+
+def run_task3():
+    menu()
+
+if __name__ == "__main__":
+    run_task3()
