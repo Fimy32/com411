@@ -57,6 +57,6 @@ def run_task4():
         route.append(menu_and_input())
     print("Escape route:",route)
 
-
 if __name__ == "__main__":
     run_task4()
+
