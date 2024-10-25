@@ -21,3 +21,22 @@ def run_task2():
 
 if __name__ == "__main__":
     run_task2()
+
+
+#Nested tuples and lists
+
+def steps():
+    return [("step 1",50),("step 2",38),("step 3",27),("step 4",99),("step 5",4)]
+
+def run_task3():
+    good_steps = []
+    bad_steps = []
+    for element in steps():
+        if element[1] > 50:
+            good_steps.append(element)
+        else:
+            bad_steps.append(element)
+    print("Good steps:", len(good_steps),", Bad steps:", len(bad_steps))
+
+if __name__ == "__main__":
+    run_task3()
