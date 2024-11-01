@@ -53,7 +53,7 @@ def search_books(path):
     books = "Books:\n"
     with open(path) as file:
         for line in file:
-            if line[6] == "n" and line[5] == "o" and line[0] == "S":
+            if line.startswith("Section: "):
                 sections = sections + line + "\n"
             else:
                 books = books + line + "\n"
@@ -71,3 +71,5 @@ def run_task4():
     save("section-books.txt", str(search_books("books.txt")))
 
 run_task4()
+
+
