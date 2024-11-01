@@ -35,14 +35,39 @@ import os
 # if __name__ == "__main__":
 #     run_task2()
 
-def search(path):
+# def search(path):
+#     print("Searching...")
+#     with open(path) as file:
+#         for line in file:
+#             print("Looked in", line)
+#     print("\n...Done!")
+#
+# def run_task3():
+#     search("library.txt")
+#
+# run_task3()
+
+def search_books(path):
     print("Searching...")
+    sections = ""
+    books = "Books:\n"
     with open(path) as file:
         for line in file:
-            print("Looked in", line)
-    print("\n...Done!")
+            if line[6] == "n" and line[5] == "o" and line[0] == "S":
+                sections = sections + line + "\n"
+            else:
+                books = books + line + "\n"
+    print("Done!")
+    print(sections, "\n\n" + books)
+    return sections + books
 
-def run_task3():
-    search("library.txt")
+def save(path,data):
+    print("Saving...")
+    with open(path,"w") as file:
+        file.write(data)
+    print("Done!")
 
-run_task3()
+def run_task4():
+    save("section-books.txt", str(search_books("books.txt")))
+
+run_task4()
