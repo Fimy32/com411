@@ -15,22 +15,34 @@ import os
 
 
 
-def display_chars(path,count):
-    with open(path, "r") as file:
-        print(file.read(int(count)))
+# def display_chars(path,count):
+#     with open(path, "r") as file:
+#         print(file.read(int(count)))
+#
+# def display_line(path):
+#     with open(path, "r") as file:
+#         print(file.readline())
+#
+# def display_text(path):
+#     with open(path, "r") as file:
+#         print(file.read())
+#
+# def run_task2():
+#     display_chars("library.txt", "10")
+#     display_line("library.txt")
+#     display_text("library.txt")
+#
+# if __name__ == "__main__":
+#     run_task2()
 
-def display_line(path):
-    with open(path, "r") as file:
-        print(file.readline())
+def search(path):
+    print("Searching...")
+    with open(path) as file:
+        for line in file:
+            print("Looked in", line)
+    print("\n...Done!")
 
-def display_text(path):
-    with open(path, "r") as file:
-        print(file.read())
+def run_task3():
+    search("library.txt")
 
-def run_task2():
-    display_chars("library.txt", "10")
-    display_line("library.txt")
-    display_text("library.txt")
-
-if __name__ == "__main__":
-    run_task2()
+run_task3()
