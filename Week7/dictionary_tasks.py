@@ -30,4 +30,21 @@ def display_items(data):
 
 run()
 
+#Nested Dictionaries
+
+def short_pattern():
+    return {"sequence":"101","occurrences":5}
+
+def medium_pattern():
+    return {"sequence":"111000","occurrences":25}
+
+def long_pattern():
+    return {"sequence":"1100110011001100","occurrences":50}
+
+def run_task3():
+    print("Analysing Patterns...")
+    print({"Short_Sequence":short_pattern(),"Medium_Sequence":medium_pattern(),"Long_Sequence":long_pattern()})
+
+run_task3()
+
 
