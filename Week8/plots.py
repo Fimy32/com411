@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import random
 
 # #Basic Data Visualisation
 # def display_line(xvalues,yvalues):
@@ -31,26 +32,42 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
-#User Inputed Data Visualisation
+# #User Inputed Data Visualisation
+#
+# def coordinate():
+#     return input("Enter an X"),input("Enter an Y")
+#
+# def path():
+#     print("Retrieving Path")
+#     x_values = []
+#     y_values = []
+#     for i in range(4):
+#         data = coordinate()
+#         x_values.append(data[0])
+#         y_values.append(data[1])
+#     return x_values,y_values
+#
+# def run_task3():
+#     values = path()
+#     plt.plot(values[0],values[1],"ro--")
+#     plt.xlabel("X Values")
+#     plt.ylabel("Y Values")
+#     plt.show()
+#
+# run_task3()
 
-def coordinate():
-    return input("Enter an X"),input("Enter an Y")
 
-def path():
-    print("Retrieving Path")
-    x_values = []
-    y_values = []
-    for i in range(4):
-        data = coordinate()
-        x_values.append(data[0])
-        y_values.append(data[1])
-    return x_values,y_values
+#Line plots using dictionaries
 
-def run_task3():
-    values = path()
-    plt.plot(values[0],values[1],"ro--")
-    plt.xlabel("X Values")
-    plt.ylabel("Y Values")
+def data():
+    return {"Line":input("Enter Line Type(--,-,:)"),"Colour":input("Enter colour (r,g,b)"),"Marker":input("Enter marker (o,s,^)")}
+
+def generate():
+    for i in range(int(input("How many lines would you like to generate?"))):
+        values = data()
+        plt.plot(random.sample(range(random.randint(0,10),random.randint(10,20)),5), random.sample(range(random.randint(0,10),random.randint(10,20)),5), values["Line"] + values["Colour"] + values["Marker"])
     plt.show()
 
-run_task3()
+def run_task4():
+    generate()
+run_task4()
