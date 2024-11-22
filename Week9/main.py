@@ -30,5 +30,11 @@ for robot in planet.inhabitants["robots"]:
     print(robot)
 
 universe = universeclass.Universe()
-universe.generate()
-print(universe)
+for i in range(20):
+    universe.generate()
+
+
+
+universe.show_population("human")
+universe.show_population("robots")
+universe.show_population("both")

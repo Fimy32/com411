@@ -1,3 +1,6 @@
+from Week9.classes.human import Human
+from Week9.classes.robot import Robot
+
 class Planet:
 
     def __init__(self, name):
