@@ -2,23 +2,25 @@ class Planet:
 
     def __init__(self, name):
         self.name = name
-        self.humans = []
-        self.robots = []
+        self.inhabitants = {
+        "humans" : [],
+        "robots" : []
+        }
 
 
     def add(self,type,obj):
         if type == 'human':
-            self.humans.append(obj)
+            self.inhabitants["humans"].append(obj)
         elif type == 'robot':
-            self.robots.append(obj)
+            self.inhabitants["robots"].append(obj)
 
     def remove(self, type):
         if type == 'human':
-            self.humans.remove(type)
+            self.inhabitants["humans"].remove(type)
         elif type == 'robot':
-            self.robots.remove(type)
+            self.inhabitants["robots"].remove(type)
 
     def __str__(self):
-        return "Name: '" + self.name + "' Humans: " + f'{self.humans}' + " Robots: " + f'{self.robots}'
+        return "Name: '" + self.name + "' Humans: " + f'{self.inhabitants}'
 
 

@@ -24,7 +24,7 @@ for i in range(20):
 
 #print(planet)
 print(planet.name)
-for human in planet.humans:
+for human in planet.inhabitants["humans"]:
     print(human)
-for robot in planet.robots:
+for robot in planet.inhabitants["robots"]:
     print(robot)
