@@ -1,5 +1,5 @@
-from Week9.classes import robot as robotclass, human as humanclass
-
+from Week9.classes import robot as robotclass, human as humanclass, planet as planetclass
+import random
 human = humanclass.Human()
 human.display()
 robot = robotclass.Robot()
@@ -15,3 +15,16 @@ for i in range(20):
         print("Not enough energy to move",i)
     print(robot, "\n\n")
 
+planet = planetclass.Planet("Ultimate Planet")
+for i in range(20):
+    if random.randint(0,2) == 1:
+        planet.add("human",human)
+    if random.randint(0,2) == 1:
+        planet.add("robot",robot)
+
+#print(planet)
+print(planet.name)
+for human in planet.humans:
+    print(human)
+for robot in planet.robots:
+    print(robot)
