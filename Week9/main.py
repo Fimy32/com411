@@ -1,4 +1,4 @@
-from Week9.classes import robot as robotclass, human as humanclass, planet as planetclass
+from Week9.classes import robot as robotclass, human as humanclass, planet as planetclass, universe as universeclass
 import random
 human = humanclass.Human()
 human.display()
@@ -28,3 +28,7 @@ for human in planet.inhabitants["humans"]:
     print(human)
 for robot in planet.inhabitants["robots"]:
     print(robot)
+
+universe = universeclass.Universe()
+universe.generate()
+print(universe)
