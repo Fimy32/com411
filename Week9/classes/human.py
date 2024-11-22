@@ -7,3 +7,9 @@ class Human:
 
     def display(self):
         print("I am",self.name)
+
+    def __str__(self):
+        return self.name,self.age,self.energy
+
+    def __repr__(self):
+        return self.name,self.age,self.energy

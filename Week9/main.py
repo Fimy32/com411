@@ -1,7 +1,7 @@
-from Week9 import human as humanclass, robot as robotclass
+from Week9.classes import robot as robotclass, human as humanclass
 
 human = humanclass.Human()
-human.display
+human.display()
 robot = robotclass.Robot()
-robot.display
+robot.display()
 
