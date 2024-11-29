@@ -1,6 +1,4 @@
-from human import *
-from robot import *
-
+from universe import *
 if __name__ == "__main__":
-    human1 = Human("Bob")
-    print(human1)
+    universe1 = Universe()
+    universe1.show_population_grapth("")
